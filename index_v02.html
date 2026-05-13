@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- ============================================================
+  META
+  ============================================================ -->
+<title>파주 베조아니펜션 | 탄현면 헤이리마을 근처 가족·단체·바비큐 펜션</title>
+<meta name="description" content="파주 탄현면 헤이리마을 근처에 위치한 베조아니펜션입니다. 가족·단체 숙박, 바비큐 이용, 면회·외박 일정으로 파주에 머무는 가족이 쉬어가기 좋은 정겨운 실속형 펜션입니다. 객실 가능 여부와 단체·바비큐 조건은 예약 전 전화로 확인해 주세요." />
+
+<!-- TODO: 확정 도메인 입력 후 canonical URL 수정 -->
+<link rel="canonical" href="https://TODO-DOMAIN/" />
+
+<!-- TODO: 확정 도메인 입력 후 OG URL 수정 / OG 이미지 파일 확정 후 경로 수정 -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="파주 베조아니펜션 | 탄현면 헤이리마을 근처 가족·단체·바비큐 펜션" />
+<meta property="og:description" content="파주 탄현면 헤이리마을 근처. 가족·단체 숙박, 바비큐 이용, 면회·외박 일정으로 파주에 머무는 가족이 쉬어가기 좋은 정겨운 실속형 펜션." />
+<meta property="og:url" content="https://TODO-DOMAIN/" />
+<meta property="og:image" content="./assets/og-image.jpg" />
+<meta property="og:locale" content="ko_KR" />
+
+<meta name="last-modified" content="2026-05-14" />
+
+<!-- ============================================================
+  FONTS · Tailwind CDN
+  ============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          cream:        "#F8F1E7",
+          paper:        "#FFFDF8",
+          wood:         "#7A4E32",
+          "wood-deep":  "#2B211A",
+          beige:        "#D9C8B2",
+          "beige-line": "#E7D8C5",
+          brick:        "#9A5A3C",
+          "green-soft": "#7D8B6F",
+          ink:          "#2B211A",
+          "ink-mute":   "#6B5F50",
+        },
+        fontFamily: {
+          sans: ["Pretendard", "ui-sans-serif", "system-ui", "sans-serif"],
+          head: ["'Gowun Batang'", "'Nanum Myeongjo'", "serif"],
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  :root {
+    --cream:        #F8F1E7;
+    --paper:        #FFFDF8;
+    --wood:         #7A4E32;
+    --wood-deep:    #2B211A;
+    --beige:        #D9C8B2;
+    --beige-line:   #E7D8C5;
+    --brick:        #9A5A3C;
+    --green-soft:   #7D8B6F;
+    --ink:          #2B211A;
+    --ink-mute:     #6B5F50;
+  }
+
+  html, body {
+    font-family: "Pretendard", ui-sans-serif, system-ui, sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body { letter-spacing: -0.015em; }
+
+  /* 1% grain texture — body 전체에 절제된 종이 질감 */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.17 0 0 0 0 0.13 0 0 0 0 0.10 0 0 0 0.55 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+    opacity: 0.045;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 9999;
+  }
+
+  /* 헤드라인 — 한국어 명조 */
+  .font-head, h1, h2, h3 {
+    font-family: "Gowun Batang", "Nanum Myeongjo", serif;
+    letter-spacing: -0.015em;
+  }
+  h1 { line-height: 1.18; font-weight: 700; }
+  h2 { line-height: 1.22; font-weight: 700; }
+  h3 { line-height: 1.3;  font-weight: 700; }
+
+  /* tabular nums for 전화·시간·시리얼 */
+  .num { font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+
+  /* Eyebrow — 좌측 가로선 + 트래킹 */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Pretendard", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--brick);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 18px;
+    height: 1px;
+    background: currentColor;
+    display: inline-block;
+  }
+  .eyebrow-on-dark { color: rgba(248, 241, 231, 0.92); }
+
+  /* Serial number — Gowun Batang */
+  .serial {
+    font-family: "Gowun Batang", serif;
+    font-size: 13px;
+    color: var(--brick);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    font-variant-numeric: tabular-nums;
+  }
+  .serial-lg {
+    font-family: "Gowun Batang", serif;
+    font-size: 18px;
+    color: var(--brick);
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* CTA */
+  .btn-primary {
+    background: var(--wood-deep);
+    color: var(--cream);
+    transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+  }
+  .btn-primary:hover {
+    background: #1B130E;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(43, 33, 26, 0.18);
+  }
+  .btn-outline {
+    border: 1px solid var(--wood);
+    color: var(--ink);
+    background: transparent;
+    transition: background .2s ease, color .2s ease;
+  }
+  .btn-outline:hover {
+    background: var(--wood);
+    color: var(--paper);
+  }
+  .btn-ghost-light {
+    color: var(--cream);
+    border: 1px solid rgba(248, 241, 231, 0.45);
+    background: rgba(248, 241, 231, 0.06);
+    transition: background .2s ease;
+  }
+  .btn-ghost-light:hover {
+    background: rgba(248, 241, 231, 0.16);
+  }
+  .link-arrow {
+    color: var(--wood);
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s ease;
+  }
+  .link-arrow:hover { border-color: var(--wood); }
+  .link-arrow.on-dark {
+    color: var(--cream);
+  }
+  .link-arrow.on-dark:hover { border-color: rgba(248, 241, 231, 0.65); }
+
+  /* Card hover */
+  .card-hover {
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  @media (hover:hover) and (pointer:fine) {
+    .card-hover:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(43, 33, 26, 0.08);
+      border-color: rgba(122, 78, 50, 0.32);
+    }
+  }
+
+  /* Reveal on scroll */
+  .reveal { opacity: 0; transform: translate3d(0, 18px, 0);
+            transition: opacity .65s cubic-bezier(.22,.61,.36,1),
+                        transform .65s cubic-bezier(.22,.61,.36,1); }
+  .reveal.is-in { opacity: 1; transform: translate3d(0,0,0); }
+
+  /* Hero staggered lines */
+  .hero-line { opacity: 0; transform: translate3d(0, 14px, 0);
+               transition: opacity .8s cubic-bezier(.22,.61,.36,1),
+                           transform .8s cubic-bezier(.22,.61,.36,1); }
+  .is-loaded .hero-line { opacity: 1; transform: translate3d(0,0,0); }
+  .is-loaded .hero-line.d1 { transition-delay: 0ms; }
+  .is-loaded .hero-line.d2 { transition-delay: 140ms; }
+  .is-loaded .hero-line.d3 { transition-delay: 280ms; }
+  .is-loaded .hero-line.d4 { transition-delay: 420ms; }
+  .is-loaded .hero-line.d5 { transition-delay: 560ms; }
+
+  /* Image scale-in */
+  .img-scale { overflow: hidden; }
+  .img-scale > img { transform: scale(1.04); transition: transform 1.2s cubic-bezier(.22,.61,.36,1); }
+  .img-scale.is-in > img { transform: scale(1.0); }
+
+  /* FAQ */
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .faq-toggle { transform: rotate(45deg); }
+  .faq-toggle {
+    transition: transform .25s ease;
+    display: inline-block;
+    color: var(--wood);
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  /* Footer wordmark */
+  .wordmark {
+    font-family: "Gowun Batang", serif;
+    letter-spacing: 0.32em;
+    font-weight: 700;
+  }
+
+  /* Section divider */
+  .section-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(122, 78, 50, 0.22), transparent);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .hero-line, .img-scale > img, .card-hover, .btn-primary, .btn-outline, .btn-ghost-light {
+      transition: none !important;
+      transform: none !important;
+    }
+    .reveal { opacity: 1 !important; }
+    .hero-line { opacity: 1 !important; }
+    .img-scale > img { transform: scale(1) !important; }
+  }
+
+  /* 모바일 헤드라인 — 명조 가독성 보강 */
+  @media (max-width: 640px) {
+    h1 { letter-spacing: -0.01em; }
+  }
+</style>
+</head>
+
+<body class="bg-cream text-ink">
+
+<!-- ============================================================
+  SVG ICON SPRITE (손그림 풍 7종)
+  ============================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ic-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21c-4.5-5.2-7-8.4-7-11.4A7 7 0 0 1 12 2.6a7 7 0 0 1 7 7c0 3-2.5 6.2-7 11.4Z"/>
+      <circle cx="12" cy="9.7" r="2.4"/>
+    </symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5.4 3.7c.5-.5 1.3-.6 1.9-.2L9.6 5c.7.5.9 1.4.5 2.1l-1 1.8c.9 2 2.5 3.7 4.5 4.7l1.8-1c.7-.4 1.7-.2 2.2.5l1.6 2.3c.4.6.3 1.4-.2 1.9l-1.1 1c-1 1-2.5 1.3-3.8.8C9.2 16.9 6 13.8 4.5 9.3c-.4-1.3-.1-2.7.8-3.8L5.4 3.7Z"/>
+    </symbol>
+    <symbol id="ic-car" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.5 14.5v-2.3l1.6-3.6a2 2 0 0 1 1.8-1.2h10.2a2 2 0 0 1 1.8 1.2l1.6 3.6v2.3"/>
+      <path d="M3.5 14.5h17"/>
+      <path d="M5 14.5v2.4M19 14.5v2.4"/>
+      <circle cx="7.4" cy="14.6" r="1.6"/>
+      <circle cx="16.6" cy="14.6" r="1.6"/>
+    </symbol>
+    <symbol id="ic-fire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2.6c.7 2.3.3 4-1.3 5.4-2 1.7-3.4 3.6-3.4 6.1 0 3.6 2.9 6.3 6.7 6.3s6.7-2.7 6.7-6.3c0-1.7-.6-3.1-1.6-4.4-.4 1.4-1.4 2.3-2.7 2.5.4-1.6-.1-3.5-1.5-5-1-1.1-1.8-2.6-2.9-4.6Z"/>
+      <path d="M11 17.6c0-1.6 1-2.5 1-3.7 1 1 1.7 2 1.7 3.2 0 .9-.6 1.7-1.4 1.7s-1.3-.5-1.3-1.2Z"/>
+    </symbol>
+    <symbol id="ic-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.6 11 12 3.8 20.4 11"/>
+      <path d="M5.6 9.3v10.4h12.8V9.3"/>
+      <path d="M10 19.7v-4.4h4v4.4"/>
+      <path d="M9 12.5h2v1.4H9z"/>
+    </symbol>
+    <symbol id="ic-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.4c-2.6 1.6-4.2 3.6-4.2 5.7 0 1.4.8 2.5 1.9 3-1.8.5-3 1.8-3 3.4 0 1.9 1.8 3.4 4 3.4h2.6c2.2 0 4-1.5 4-3.4 0-1.6-1.2-2.9-3-3.4 1.1-.5 1.9-1.6 1.9-3 0-2.1-1.6-4.1-4.2-5.7Z"/>
+      <path d="M12 19v2.4"/>
+    </symbol>
+    <symbol id="ic-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.4"/>
+      <path d="M12 7.4v4.8l3 1.8"/>
+    </symbol>
+  </defs>
+</svg>
+
+
+<!-- ============================================================
+  NAV
+  ============================================================ -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-cream/85 backdrop-blur-md border-b border-beige-line">
+  <div class="max-w-7xl mx-auto px-5 md:px-10 h-16 flex items-center justify-between">
+    <a href="#hero" class="font-head text-base font-bold tracking-[0.22em] text-ink">BEAJOANI</a>
+    <div class="hidden md:flex items-center gap-7 text-sm">
+      <a href="#rooms" class="text-ink-mute hover:text-ink transition-colors">객실</a>
+      <a href="#bbq-group" class="text-ink-mute hover:text-ink transition-colors">바비큐·단체</a>
+      <a href="#family-stay" class="text-ink-mute hover:text-ink transition-colors">가족 숙박 안내</a>
+      <a href="#location" class="text-ink-mute hover:text-ink transition-colors">위치</a>
+      <a href="#faq" class="text-ink-mute hover:text-ink transition-colors">FAQ</a>
+    </div>
+    <!-- TODO: NOL 또는 네이버예약 링크 입력 -->
+    <a href="#TODO-RESERVATION-URL"
+       class="btn-primary inline-flex items-center px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide">
+      객실 가능 여부 확인
+    </a>
+  </div>
+</nav>
+
+<main class="pt-16">
+
+<!-- ============================================================
+  1. HERO
+  ============================================================ -->
+<section id="hero" class="relative min-h-[92vh] md:min-h-screen w-full overflow-hidden">
+  <!-- TODO: 실제 이미지 파일로 교체 (hero-exterior.jpg, 16:9 권장) -->
+  <div class="absolute inset-0">
+    <img src="./assets/hero-exterior.jpg"
+         alt="파주 탄현면 헤이리마을 근처 베조아니펜션 외관"
+         class="w-full h-full object-cover" />
+    <div class="absolute inset-0"
+         style="background: linear-gradient(180deg, rgba(43,33,26,0.55) 0%, rgba(43,33,26,0.2) 45%, rgba(248,241,231,0.05) 80%, var(--cream) 100%);"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 md:px-10 min-h-[92vh] md:min-h-screen flex flex-col justify-end pb-20 md:pb-28">
+
+    <span class="eyebrow eyebrow-on-dark hero-line d1 mb-6">Paju · Tanhyeon · Beajoani Pension</span>
+
+    <h1 class="font-head text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-cream mb-6 max-w-4xl hero-line d2">
+      파주 탄현면에서<br />
+      편하게 묵는 가족·단체 펜션
+    </h1>
+
+    <p class="text-cream text-base md:text-lg leading-relaxed max-w-2xl mb-2 hero-line d3" style="opacity:.95">
+      헤이리마을 근처, 바비큐와 단체 이용이 가능한 정겨운 숙소입니다.
+    </p>
+    <p class="text-cream text-sm md:text-base leading-relaxed max-w-2xl mb-10 hero-line d4" style="opacity:.82">
+      면회·외박 일정으로 파주에 머무는 가족이 쉬어가기 좋은 위치이기도 합니다.
+    </p>
+
+    <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6 hero-line d5">
+      <!-- TODO: NOL 또는 네이버예약 링크 입력 -->
+      <a href="#TODO-RESERVATION-URL"
+         class="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wide"
+         style="background: var(--cream); color: var(--wood-deep);">
+        객실 가능 여부 확인하기
+      </a>
+      <div class="flex items-center gap-6">
+        <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+        <a href="tel:TODO-PHONE" class="link-arrow on-dark num">
+          전화 문의
+          <span aria-hidden="true">→</span>
+        </a>
+        <!-- TODO: 네이버지도 place URL 입력 -->
+        <a href="#TODO-NAVER-MAP-URL" class="link-arrow on-dark">
+          지도 보기
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  2. QUICK INFO — 인덱스형
+  ============================================================ -->
+<section id="quick-info" class="py-20 md:py-24 px-5 md:px-10 bg-paper">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
+      <div class="reveal">
+        <span class="eyebrow block mb-4">Quick Info</span>
+        <h2 class="text-2xl md:text-4xl text-ink">예약 전 먼저 확인하실 정보</h2>
+      </div>
+      <p class="text-ink-mute max-w-md text-sm md:text-base leading-relaxed reveal">
+        위치, 연락처, 이용 가능한 시설을 한눈에 확인하실 수 있습니다.
+      </p>
+    </div>
+
+    <div class="border-t border-beige-line">
+
+      <!-- 01 LOCATION -->
+      <div class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_180px_1fr_1fr] gap-x-4 md:gap-x-6 gap-y-2 py-5 border-b border-beige-line items-center reveal">
+        <span class="serial-lg num">01</span>
+        <div class="flex items-center gap-2.5 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-pin"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Location</span>
+        </div>
+        <p class="font-semibold text-ink text-sm md:text-base">경기 파주시 탄현면</p>
+        <p class="text-sm text-ink-mute">헤이리마을길 59-126</p>
+      </div>
+
+      <!-- 02 PHONE -->
+      <div class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_180px_1fr_1fr] gap-x-4 md:gap-x-6 gap-y-2 py-5 border-b border-beige-line items-center reveal">
+        <span class="serial-lg num">02</span>
+        <div class="flex items-center gap-2.5 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-phone"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Phone</span>
+        </div>
+        <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+        <p class="font-semibold text-ink text-sm md:text-base num">TODO — 대표님 확인 후 입력</p>
+        <p class="text-sm text-ink-mute">단체·바비큐·외박 일정 문의 권장</p>
+      </div>
+
+      <!-- 03 RESERVATION -->
+      <div class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_180px_1fr_1fr] gap-x-4 md:gap-x-6 gap-y-2 py-5 border-b border-beige-line items-center reveal">
+        <span class="serial-lg num">03</span>
+        <div class="flex items-center gap-2.5 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-clock"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Reservation</span>
+        </div>
+        <p class="font-semibold text-ink text-sm md:text-base">NOL · 네이버예약 · 전화</p>
+        <!-- TODO: 1순위 예약 플랫폼 결정 후 카드 보완 -->
+        <p class="text-sm text-ink-mute">플랫폼별 객실·조건 상이</p>
+      </div>
+
+      <!-- 04 STAY -->
+      <div class="grid grid-cols-[48px_1fr] md:grid-cols-[80px_180px_1fr_1fr] gap-x-4 md:gap-x-6 gap-y-2 py-5 border-b border-beige-line items-center reveal">
+        <span class="serial-lg num">04</span>
+        <div class="flex items-center gap-2.5 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-house"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Stay</span>
+        </div>
+        <p class="font-semibold text-ink text-sm md:text-base">가족·단체·바비큐 이용</p>
+        <p class="text-sm text-ink-mute">와이파이 · 주차 가능</p>
+        <!-- TODO: 주차 가능 대수 확정 후 보완 -->
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  3. FIT FOR
+  ============================================================ -->
+<section id="fit-for" class="py-20 md:py-28 px-5 md:px-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="max-w-2xl mb-14 reveal">
+      <span class="eyebrow block mb-4">Who it's for</span>
+      <h2 class="text-2xl md:text-4xl text-ink mb-5">이런 일정에 잘 맞습니다</h2>
+      <p class="text-ink-mute leading-relaxed">
+        화려한 신축 감성숙소보다, 함께 먹고 편하게 쉬는 하루가 필요한 분께 맞는 펜션입니다.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+      <article class="card-hover bg-paper rounded-2xl p-7 border border-beige-line reveal">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="serial num">01</span>
+          <span class="text-wood"><svg width="20" height="20" aria-hidden="true"><use href="#ic-house"/></svg></span>
+        </div>
+        <h3 class="text-lg text-ink mb-3">면회·외박 일정으로<br/>파주에 머무는 가족</h3>
+        <p class="text-sm text-ink-mute leading-relaxed">일정이 정해졌다면 객실 가능 여부와 인원을 먼저 확인해 주세요.</p>
+      </article>
+
+      <article class="card-hover bg-paper rounded-2xl p-7 border border-beige-line reveal">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="serial num">02</span>
+          <span class="text-wood"><svg width="20" height="20" aria-hidden="true"><use href="#ic-tree"/></svg></span>
+        </div>
+        <h3 class="text-lg text-ink mb-3">헤이리마을 근처<br/>숙소를 찾는 여행객</h3>
+        <p class="text-sm text-ink-mute leading-relaxed">헤이리·프로방스 여행 전후로 하루 묵기 좋은 위치입니다.</p>
+      </article>
+
+      <article class="card-hover bg-paper rounded-2xl p-7 border border-beige-line reveal">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="serial num">03</span>
+          <span class="text-wood"><svg width="20" height="20" aria-hidden="true"><use href="#ic-fire"/></svg></span>
+        </div>
+        <h3 class="text-lg text-ink mb-3">가족끼리 바비큐 가능한<br/>펜션을 찾는 분</h3>
+        <p class="text-sm text-ink-mute leading-relaxed">이용 조건은 날짜·인원에 따라 달라질 수 있어 예약 전 문의를 권장합니다.</p>
+      </article>
+
+      <article class="card-hover bg-paper rounded-2xl p-7 border border-beige-line reveal">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="serial num">04</span>
+          <span class="text-wood"><svg width="20" height="20" aria-hidden="true"><use href="#ic-house"/></svg></span>
+        </div>
+        <h3 class="text-lg text-ink mb-3">단체 모임·가족 모임<br/>숙소가 필요한 분</h3>
+        <p class="text-sm text-ink-mute leading-relaxed">인원과 일정에 따라 객실 구성이 달라질 수 있어 전화 문의를 권장합니다.</p>
+      </article>
+
+      <article class="card-hover bg-paper rounded-2xl p-7 border border-beige-line reveal">
+        <div class="flex items-center gap-3 mb-5">
+          <span class="serial num">05</span>
+          <span class="text-wood"><svg width="20" height="20" aria-hidden="true"><use href="#ic-clock"/></svg></span>
+        </div>
+        <h3 class="text-lg text-ink mb-3">화려한 호텔보다<br/>편하게 쉬는 숙소를 찾는 분</h3>
+        <p class="text-sm text-ink-mute leading-relaxed">함께 먹고 쉬는 하루가 필요한 분께 어울리는 정겨운 펜션입니다.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  4. ROOMS
+  ============================================================ -->
+<section id="rooms" class="py-20 md:py-28 px-5 md:px-10 bg-paper">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-14 reveal">
+      <div class="max-w-xl">
+        <span class="eyebrow block mb-4">Rooms</span>
+        <h2 class="text-2xl md:text-4xl text-ink mb-5">객실 안내</h2>
+        <p class="text-ink-mute leading-relaxed">
+          가족·단체·바비큐 등 머무는 방식에 맞게 객실을 안내드립니다.
+        </p>
+      </div>
+      <!-- TODO: 전체 객실 수 확정 후 "총 N개 객실 안내" 보조 카피 추가 -->
+    </div>
+
+    <!-- TODO: 객실명 / 기준인원 / 최대인원 / 이용 가능 범위 확정 후 전면 교체 -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+      <!-- Room 1 -->
+      <article class="card-hover group reveal">
+        <div class="aspect-[4/5] rounded-2xl mb-5 bg-beige-line img-scale">
+          <!-- TODO: 실제 이미지 파일로 교체 (family-room.jpg) -->
+          <img src="./assets/family-room.jpg"
+               alt="파주 가족 숙박 가능한 베조아니펜션 객실"
+               loading="lazy"
+               class="w-full h-full object-cover" />
+        </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="serial num">01</span>
+          <span class="inline-block px-2.5 py-1 rounded-full bg-beige text-wood-deep text-[10px] font-semibold tracking-[0.16em] uppercase">Family</span>
+        </div>
+        <!-- TODO: 객실명 확정 후 수정 -->
+        <h3 class="text-xl text-ink mb-2">가족 이용 객실 <span class="text-ink-mute text-sm">(객실명 TODO)</span></h3>
+        <!-- TODO: 기준인원 / 최대인원 확정 후 수정 -->
+        <p class="text-sm text-ink-mute leading-relaxed">
+          기준 인원 TODO / 최대 인원 TODO. 가족이 함께 편하게 쉬어가기 좋은 구성입니다.
+        </p>
+      </article>
+
+      <!-- Room 2 -->
+      <article class="card-hover group reveal">
+        <div class="aspect-[4/5] rounded-2xl mb-5 bg-beige-line img-scale">
+          <!-- TODO: 실제 이미지 파일로 교체 (group-room.jpg) -->
+          <img src="./assets/group-room.jpg"
+               alt="파주 단체 숙박 가능한 베조아니펜션 객실"
+               loading="lazy"
+               class="w-full h-full object-cover" />
+        </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="serial num">02</span>
+          <span class="inline-block px-2.5 py-1 rounded-full bg-beige text-wood-deep text-[10px] font-semibold tracking-[0.16em] uppercase">Group</span>
+        </div>
+        <!-- TODO: 객실명 확정 후 수정 -->
+        <h3 class="text-xl text-ink mb-2">단체 이용 객실 <span class="text-ink-mute text-sm">(객실명 TODO)</span></h3>
+        <!-- TODO: 기준인원 / 최대인원 확정 후 수정 -->
+        <p class="text-sm text-ink-mute leading-relaxed">
+          기준 인원 TODO / 최대 인원 TODO. 인원이 많은 가족 모임이나 단체 일정에 맞춥니다.
+        </p>
+      </article>
+
+      <!-- Room 3 -->
+      <article class="card-hover group reveal">
+        <div class="aspect-[4/5] rounded-2xl mb-5 bg-beige-line img-scale">
+          <!-- TODO: 실제 이미지 파일로 교체 (bbq-area.jpg) -->
+          <img src="./assets/bbq-area.jpg"
+               alt="베조아니펜션 바비큐 이용 공간 인접 객실"
+               loading="lazy"
+               class="w-full h-full object-cover" />
+        </div>
+        <div class="flex items-center gap-3 mb-3">
+          <span class="serial num">03</span>
+          <span class="inline-block px-2.5 py-1 rounded-full bg-beige text-wood-deep text-[10px] font-semibold tracking-[0.16em] uppercase">BBQ Nearby</span>
+        </div>
+        <!-- TODO: 객실명 확정 후 수정 -->
+        <h3 class="text-xl text-ink mb-2">바비큐 이용 가능 객실 <span class="text-ink-mute text-sm">(객실명 TODO)</span></h3>
+        <!-- TODO: 기준인원 / 최대인원 / 바비큐 이용 조건 확정 후 수정 -->
+        <p class="text-sm text-ink-mute leading-relaxed">
+          기준 인원 TODO / 최대 인원 TODO. 바비큐 이용을 함께 계획하실 때 안내드립니다.
+        </p>
+      </article>
+
+    </div>
+
+    <p class="text-xs text-ink-mute/80 mt-10">
+      <!-- TODO: 가격 표기 정책 결정 후 보완 또는 삭제 -->
+      ※ 객실 요금 표기 정책 TODO. 정확한 요금은 예약 플랫폼 또는 전화 문의에서 확인해 주세요.
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  5. BBQ + GROUP — 좌측 이미지 풀블리드 느낌
+  ============================================================ -->
+<section id="bbq-group" class="py-20 md:py-28 px-5 md:px-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+      <div class="lg:col-span-6 reveal">
+        <div class="aspect-[4/5] rounded-2xl bg-beige-line img-scale">
+          <!-- TODO: 실제 이미지 파일로 교체 (yard-bbq.jpg) -->
+          <img src="./assets/yard-bbq.jpg"
+               alt="파주 베조아니펜션 가족 바비큐 이용 공간"
+               loading="lazy"
+               class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 reveal">
+        <span class="eyebrow block mb-4">BBQ &amp; Group</span>
+        <h2 class="text-2xl md:text-4xl text-ink mb-6 leading-tight">
+          함께 먹고 쉬는 시간이<br/>필요한 분께 잘 맞습니다
+        </h2>
+        <p class="text-ink-mute leading-relaxed mb-10">
+          가족·단체 단위로 바비큐를 즐기며 머무실 수 있는 펜션입니다.
+          바비큐 이용 조건과 단체 객실 구성은 날짜·인원에 따라 달라질 수 있어, 예약 전 사전 문의를 권장합니다.
+        </p>
+
+        <div class="space-y-6 mb-10">
+          <div class="flex gap-4 items-start">
+            <span class="text-wood mt-0.5"><svg width="22" height="22" aria-hidden="true"><use href="#ic-fire"/></svg></span>
+            <div>
+              <p class="font-semibold text-ink mb-1.5">바비큐 이용</p>
+              <p class="text-sm text-ink-mute leading-relaxed">
+                <!-- TODO: 바비큐 운영 방식 확정 (개별/공용/유료 여부/그릴 제공) -->
+                운영 방식(개별/공용), 비용, 이용 시간 TODO. 예약 전 객실 상황과 함께 확인해 드립니다.
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span style="color: var(--green-soft)" class="mt-0.5"><svg width="22" height="22" aria-hidden="true"><use href="#ic-house"/></svg></span>
+            <div>
+              <p class="font-semibold text-ink mb-1.5">단체 이용</p>
+              <p class="text-sm text-ink-mute leading-relaxed">
+                인원과 일정에 따라 객실 구성과 이용 조건이 달라질 수 있습니다.
+                <!-- TODO: 단체 인원 상한 표기 여부 결정 -->
+                단체 인원 상한 표기 정책 TODO.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center">
+          <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+          <a href="tel:TODO-PHONE"
+             class="btn-primary inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold tracking-wide">
+            바비큐·단체 사전 문의
+          </a>
+          <!-- TODO: NOL 또는 네이버예약 링크 입력 -->
+          <a href="#TODO-RESERVATION-URL" class="link-arrow">
+            객실 가능 여부 확인
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-line"></div>
+
+
+<!-- ============================================================
+  6. FAMILY-STAY — 풀블리드 분위기 정점
+  ============================================================ -->
+<section id="family-stay" class="relative py-24 md:py-32 overflow-hidden">
+  <!-- TODO: 실제 이미지 파일로 교체 (common-space.jpg) -->
+  <div class="absolute inset-0">
+    <img src="./assets/common-space.jpg"
+         alt="베조아니펜션 가족 단체 이용 공용 공간"
+         loading="lazy"
+         class="w-full h-full object-cover" />
+    <div class="absolute inset-0"
+         style="background: linear-gradient(110deg, rgba(43,33,26,0.85) 0%, rgba(43,33,26,0.75) 45%, rgba(122,78,50,0.55) 100%);"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 md:px-10">
+    <div class="max-w-2xl reveal">
+      <span class="eyebrow eyebrow-on-dark block mb-5">Stay for family visits</span>
+      <h2 class="font-head text-3xl md:text-5xl text-cream mb-8 leading-tight">
+        면회·외박 일정으로<br/>파주에 머무는 가족이<br/>쉬어가기 좋은 위치입니다
+      </h2>
+
+      <div class="space-y-5 text-cream leading-relaxed mb-10" style="opacity:.92">
+        <p class="text-base md:text-lg">
+          베조아니펜션은 파주 탄현면에 위치해 있어, 면회나 외박 일정으로 파주에 머무는
+          가족이 위치와 객실 가능 여부를 함께 확인해 보실 수 있는 펜션입니다.
+        </p>
+        <p class="text-sm md:text-base" style="opacity:.85">
+          정확한 이동 시간은 일정과 교통 상황에 따라 달라질 수 있어 단정해 안내드리기 어렵습니다.
+          일정이 정해졌다면 객실 가능 여부와 인원을 먼저 확인해 주시면 안내해 드립니다.
+        </p>
+        <!-- TODO: 주변 군부대명 직접 거론 금지 -->
+      </div>
+
+      <details class="border-t border-cream/25 pt-5 mb-10">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer">
+          <span class="font-semibold text-cream">어떤 경우에 적합한가요?</span>
+          <span class="faq-toggle" style="color: var(--cream);">+</span>
+        </summary>
+        <div class="mt-4 text-sm text-cream/85 leading-relaxed space-y-3">
+          <p>
+            파주에 가족이 함께 머물 숙소가 필요할 때, 헤이리마을 근처에서 하루 묵기 좋은 위치를 찾는 가족,
+            바비큐를 함께 이용하고 싶은 가족에게 적합합니다.
+          </p>
+          <p>
+            객실 가능 여부, 인원, 입실 시간은 일정에 따라 달라질 수 있어 예약 전 확인을 권장합니다.
+          </p>
+        </div>
+      </details>
+
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center">
+        <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+        <a href="tel:TODO-PHONE"
+           class="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold tracking-wide"
+           style="background: var(--cream); color: var(--wood-deep);">
+          전화로 일정 확인
+        </a>
+        <!-- TODO: NOL 또는 네이버예약 링크 입력 -->
+        <a href="#TODO-RESERVATION-URL" class="link-arrow on-dark">
+          객실 가능 여부 확인
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  7. LOCATION
+  ============================================================ -->
+<section id="location" class="py-20 md:py-28 px-5 md:px-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <div class="reveal order-2 lg:order-1">
+        <div class="aspect-[4/3] rounded-2xl bg-beige-line img-scale">
+          <!-- TODO: 실제 일러스트 파일로 교체 (beajoani-location-illustration.jpg)
+                    네이버지도 / 카카오지도 캡처 이미지 사용 금지 -->
+          <img src="./assets/beajoani-location-illustration.jpg"
+               alt="헤이리마을 근처 베조아니펜션 위치 일러스트"
+               loading="lazy"
+               class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <div class="reveal order-1 lg:order-2">
+        <span class="eyebrow block mb-4">Location</span>
+        <h2 class="text-2xl md:text-4xl text-ink mb-6 leading-tight">
+          파주 탄현면<br/>헤이리마을 근처
+        </h2>
+        <p class="text-ink-mute leading-relaxed mb-10">
+          헤이리마을, 파주 프로방스 여행 동선에서 하루 묵기 좋은 위치입니다.
+          탄현면 일대를 둘러보거나, 가족과 함께 천천히 쉬어가시기에 편합니다.
+        </p>
+
+        <div class="space-y-5 mb-10">
+          <div class="flex gap-4 items-start">
+            <span class="text-wood mt-0.5"><svg width="22" height="22" aria-hidden="true"><use href="#ic-pin"/></svg></span>
+            <div>
+              <p class="font-semibold text-ink mb-1">주소</p>
+              <p class="text-sm text-ink-mute leading-relaxed">
+                경기 파주시 탄현면 헤이리마을길 59-126
+                <!-- TODO: 정확한 지번 / 우편번호 확정 후 보완 -->
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-wood mt-0.5"><svg width="22" height="22" aria-hidden="true"><use href="#ic-car"/></svg></span>
+            <div>
+              <p class="font-semibold text-ink mb-1">차량 이용</p>
+              <p class="text-sm text-ink-mute leading-relaxed">
+                헤이리마을·프로방스 방면에서 접근하시기 편합니다.
+                <!-- TODO: 차량 이동 시간 실측치 확정 후 보완 (단정 표기 금지) -->
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-4 items-start">
+            <span class="text-wood mt-0.5"><svg width="22" height="22" aria-hidden="true"><use href="#ic-car"/></svg></span>
+            <div>
+              <p class="font-semibold text-ink mb-1">주차</p>
+              <p class="text-sm text-ink-mute leading-relaxed">
+                펜션 내 주차 공간을 이용하실 수 있습니다.
+                <!-- TODO: 주차 가능 대수 확정 후 보완 -->
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-start sm:items-center">
+          <!-- TODO: 네이버지도 place URL 입력 -->
+          <a href="#TODO-NAVER-MAP-URL"
+             class="btn-primary inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-semibold tracking-wide">
+            지도에서 위치 보기
+          </a>
+          <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+          <a href="tel:TODO-PHONE" class="link-arrow">
+            전화 문의
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  8. RESERVATION
+  ============================================================ -->
+<section id="reservation" class="py-20 md:py-28 px-5 md:px-10 bg-paper">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14 reveal">
+      <span class="eyebrow inline-flex mb-4">Reservation</span>
+      <h2 class="text-2xl md:text-4xl text-ink mb-5">예약 안내</h2>
+      <p class="text-ink-mute leading-relaxed max-w-2xl mx-auto">
+        날짜와 인원이 정해졌다면 예약 플랫폼 또는 전화로 객실 가능 여부를 먼저 확인해 주세요.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
+
+      <div class="bg-cream rounded-2xl p-6 border border-beige-line reveal">
+        <div class="flex items-center gap-2 mb-3 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-clock"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Check in / out</span>
+        </div>
+        <!-- TODO: 입실·퇴실 시간 확정 -->
+        <p class="font-semibold text-ink num">체크인 TODO / 체크아웃 TODO</p>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-6 border border-beige-line reveal">
+        <div class="flex items-center gap-2 mb-3 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-house"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Channel</span>
+        </div>
+        <!-- TODO: 1순위 예약 플랫폼 결정 후 카드 보완 -->
+        <p class="font-semibold text-ink">NOL · 네이버예약 · 전화</p>
+        <p class="text-xs text-ink-mute mt-1">플랫폼별 객실·조건 상이</p>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-6 border border-beige-line reveal">
+        <div class="flex items-center gap-2 mb-3 text-wood">
+          <svg width="18" height="18" aria-hidden="true"><use href="#ic-phone"/></svg>
+          <span class="eyebrow" style="font-size: 10px;">Contact</span>
+        </div>
+        <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+        <p class="font-semibold text-ink num">TODO — 대표님 확인 후 입력</p>
+        <p class="text-xs text-ink-mute mt-1">단체·바비큐·외박 일정 전화 권장</p>
+      </div>
+
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center reveal">
+      <!-- TODO: NOL 또는 네이버예약 링크 입력 -->
+      <a href="#TODO-RESERVATION-URL"
+         class="btn-primary inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wide">
+        객실 가능 여부 확인하기
+      </a>
+      <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+      <a href="tel:TODO-PHONE"
+         class="btn-outline inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wide">
+        전화 문의
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  9. FAQ
+  ============================================================ -->
+<section id="faq" class="py-20 md:py-28 px-5 md:px-10">
+  <div class="max-w-3xl mx-auto">
+    <div class="text-center mb-14 reveal">
+      <span class="eyebrow inline-flex mb-4">FAQ</span>
+      <h2 class="text-2xl md:text-4xl text-ink">자주 묻는 질문</h2>
+    </div>
+
+    <!-- Q05 강조 (펼친 상태 기본 노출) -->
+    <div class="bg-paper rounded-2xl mb-8 reveal" style="border-left: 2px solid var(--brick);">
+      <div class="p-6 md:p-7">
+        <div class="flex items-start gap-4">
+          <span class="serial-lg num mt-1">Q05</span>
+          <div class="flex-1">
+            <p class="eyebrow mb-3" style="font-size: 10px;">자주 받는 질문</p>
+            <h3 class="text-base md:text-lg text-ink mb-4 leading-snug">
+              면회·외박 일정으로 파주에 머물 가족 숙소를 찾고 있는데, 이용하기 좋은가요?
+            </h3>
+            <div class="text-sm text-ink-mute leading-relaxed space-y-3">
+              <p>
+                베조아니펜션은 파주 탄현면에 위치해 있어, 면회나 외박 일정으로 파주에 머무는 가족이
+                위치와 객실 가능 여부를 함께 확인해 보실 수 있는 펜션입니다.
+              </p>
+              <p>
+                정확한 이동 시간은 일정과 교통 상황에 따라 달라질 수 있어 단정해 안내드리기 어렵습니다.
+                일정이 정해졌다면 객실 가능 여부와 인원을 먼저 확인해 주시면 안내해 드립니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divide-y divide-beige-line border-y border-beige-line reveal">
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q01</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">베조아니펜션은 어디에 있나요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          베조아니펜션은 경기 파주시 탄현면 헤이리마을길 인근에 위치한 펜션입니다.
+          헤이리마을 여행, 가족 숙박, 단체 숙박, 바비큐 이용을 함께 고려하는 분께 적합합니다.
+          정확한 위치는 지도에서 확인하실 수 있으며, 차량 이동 동선은 방문 전 미리 확인해 주세요.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q02</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">헤이리마을과 가까운가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          베조아니펜션은 헤이리마을 근처에 있어 여행 전후로 하루 묵기 좋은 위치입니다.
+          파주 프로방스, 탄현면 일대 여행 동선에도 가깝습니다.
+          이동 시간은 교통 상황에 따라 달라질 수 있으므로 지도 링크에서 직접 확인해 주세요.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q03</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">바비큐 이용이 가능한가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          가족 또는 단체 단위로 바비큐를 즐기며 머무실 수 있습니다.
+          <!-- TODO: 바비큐 운영 방식 확정 후 본문 보완 -->
+          바비큐 이용 조건(개별/공용/비용)은 날짜, 인원, 객실 상황에 따라 달라질 수 있습니다.
+          이용 예정일과 인원을 알려주시면 가능 여부를 먼저 확인해 드립니다.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q04</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">단체 숙박이 가능한가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          가족 모임, 지인 모임, 소규모 단체 숙박이 가능한 펜션입니다.
+          인원과 날짜에 따라 객실 구성과 이용 조건이 달라질 수 있습니다.
+          단체 이용은 예약 전 전화로 먼저 문의해 주시면 일정에 맞게 안내드립니다.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q06</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">가족 단위로 묵기 편한가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          아이와 부모가 함께 편하게 쉬고 식사하기 좋은 정겨운 펜션입니다.
+          객실과 바비큐 이용 조건은 일정에 따라 달라질 수 있습니다.
+          주차 가능 여부와 입실 시간은 예약 전 함께 확인해 보시는 것을 권장합니다.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q07</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">주차가 가능한가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          펜션 내 주차 공간을 이용하실 수 있습니다.
+          <!-- TODO: 주차 가능 대수 확정 후 보완 -->
+          단체 이용으로 차량이 여러 대인 경우 사전 안내가 필요할 수 있습니다.
+          방문 차량 수가 많으시다면 예약 시 함께 알려주세요.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q08</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">예약은 어디서 하나요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          예약은 NOL·네이버예약 등 제휴 플랫폼 또는 전화로 진행하실 수 있습니다.
+          <!-- TODO: 1순위 예약 플랫폼 결정 후 본문 보완 -->
+          플랫폼별로 표시되는 객실과 조건이 다를 수 있습니다.
+          단체·바비큐·외박 일정은 전화 문의가 더 빠르고 정확합니다.
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q09</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">전화 문의가 필요한 경우는 언제인가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          단체 이용, 바비큐 조건, 면회·외박 일정 가족 숙박, 다인원 가족 숙박은 전화 문의를 권장합니다.
+          예약 플랫폼에서 확인하기 어려운 조건을 함께 정리해 드립니다.
+          <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+          연락처는 페이지 상단·하단에 안내된 번호를 이용해 주세요. (전화번호 TODO)
+        </div>
+      </details>
+
+      <details class="group py-5">
+        <summary class="flex items-center gap-4">
+          <span class="serial num shrink-0">Q10</span>
+          <span class="flex-1 font-semibold text-ink text-sm md:text-base">반려동물 동반이 가능한가요?</span>
+          <span class="faq-toggle">+</span>
+        </summary>
+        <div class="mt-4 ml-[3.5rem] text-sm text-ink-mute leading-relaxed">
+          <!-- TODO: 반려동물 가능 여부 / 추가 비용 / 객실 제한 조건 확정 후 답변 작성.
+                    정책 확정 전까지 FAQPage JSON-LD에서 본 항목은 제외함. -->
+          반려동물 동반 가능 여부와 조건은 확정 후 안내드릴 예정입니다. 예약 전 전화로 먼저 확인해 주세요.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+  10. FINAL CTA — Wood Deep 절제 마무리
+  ============================================================ -->
+<section id="final-cta" class="py-24 md:py-32 px-5 md:px-10 relative" style="background: var(--wood-deep);">
+  <div class="max-w-3xl mx-auto text-center reveal">
+    <span class="eyebrow eyebrow-on-dark inline-flex mb-6">Reservation</span>
+    <h2 class="font-head text-3xl md:text-5xl text-cream mb-6 leading-tight">
+      날짜가 정해졌다면,<br/>먼저 객실 가능 여부를 확인하세요
+    </h2>
+    <p class="text-cream/80 leading-relaxed max-w-xl mx-auto mb-12">
+      가족 숙박, 단체 이용, 바비큐, 면회·외박 일정은 예약 전 전화로 확인하시면 더 편합니다.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-16">
+      <!-- TODO: NOL 또는 네이버예약 링크 입력 -->
+      <a href="#TODO-RESERVATION-URL"
+         class="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wide"
+         style="background: var(--cream); color: var(--wood-deep);">
+        객실 가능 여부 확인하기
+      </a>
+      <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+      <a href="tel:TODO-PHONE"
+         class="btn-ghost-light inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-semibold tracking-wide">
+        전화 문의
+      </a>
+    </div>
+
+    <!-- 워드마크 -->
+    <div class="inline-flex flex-col items-center gap-2">
+      <div class="w-10 h-px" style="background: rgba(248,241,231,0.45);"></div>
+      <p class="wordmark text-cream/90 text-xs md:text-sm">BEAJOANI · PAJU</p>
+      <div class="w-10 h-px" style="background: rgba(248,241,231,0.45);"></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ============================================================
+  FOOTER
+  ============================================================ -->
+<footer class="px-5 md:px-10 py-16 md:py-20" style="background: var(--wood-deep);">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- 시그니처 문장 (가장 크게) -->
+    <p class="font-head text-cream text-xl md:text-3xl leading-snug max-w-3xl mb-14 reveal">
+      화려한 신축 감성숙소보다,<br/>
+      함께 먹고 편하게 쉬는 하루가<br/>
+      필요한 분께 맞는 펜션입니다.
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 pt-10 border-t border-cream/15">
+
+      <div>
+        <p class="wordmark text-cream text-sm mb-5">BEAJOANI PENSION</p>
+        <div class="text-sm space-y-1.5 text-cream/65">
+          <p>경기 파주시 탄현면 헤이리마을길 59-126</p>
+          <!-- TODO: 사업자 정보 입력 (상호, 대표자명, 사업자등록번호, 통신판매업번호, 이메일) -->
+          <p>상호: TODO</p>
+          <p>대표자명: TODO</p>
+          <p>사업자등록번호: TODO</p>
+          <p>통신판매업번호: TODO</p>
+          <!-- TODO: 대표님 최종 확인 전화번호 입력 -->
+          <p class="num">전화: TODO</p>
+          <p>이메일: TODO</p>
+        </div>
+      </div>
+
+      <div class="md:text-right">
+        <div class="flex flex-wrap md:justify-end gap-x-6 gap-y-2 text-sm text-cream/65 mb-8">
+          <a href="#rooms" class="hover:text-cream transition-colors">객실</a>
+          <a href="#bbq-group" class="hover:text-cream transition-colors">바비큐·단체</a>
+          <a href="#family-stay" class="hover:text-cream transition-colors">가족 숙박 안내</a>
+          <a href="#location" class="hover:text-cream transition-colors">위치</a>
+          <a href="#faq" class="hover:text-cream transition-colors">FAQ</a>
+        </div>
+        <p class="text-xs text-cream/40 num">© 2026 BEAJOANI PENSION. 마지막 업데이트 2026-05-14</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+  JSON-LD · LodgingBusiness
+  TODO: 좌표 / 우편번호 / 전화 / 도메인 / 가격대 확정 후 수정
+  ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LodgingBusiness",
+  "name": "베조아니펜션",
+  "description": "파주 탄현면 헤이리마을 근처 가족·단체·바비큐 펜션. 면회·외박 일정으로 파주에 머무는 가족이 함께 쉬어가기 좋은 위치.",
+  "url": "https://TODO-DOMAIN/",
+  "telephone": "TODO-PHONE",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "탄현면 헤이리마을길 59-126",
+    "addressLocality": "파주시",
+    "addressRegion": "경기도",
+    "postalCode": "TODO",
+    "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "TODO",
+    "longitude": "TODO"
+  },
+  "areaServed": [
+    "경기 파주시",
+    "탄현면",
+    "헤이리마을",
+    "파주 프로방스 권역"
+  ],
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "무료 와이파이", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "주차 가능", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "바비큐 이용 가능", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "단체 이용 가능", "value": true }
+  ],
+  "priceRange": "TODO",
+  "image": [
+    "https://TODO-DOMAIN/assets/hero-exterior.jpg",
+    "https://TODO-DOMAIN/assets/yard-bbq.jpg",
+    "https://TODO-DOMAIN/assets/family-room.jpg"
+  ]
+}
+</script>
+
+<!-- ============================================================
+  JSON-LD · FAQPage (Q10 반려동물은 정책 확정 전 제외)
+  ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "베조아니펜션은 어디에 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "베조아니펜션은 경기 파주시 탄현면 헤이리마을길 인근에 위치한 펜션입니다. 헤이리마을 여행, 가족 숙박, 단체 숙박, 바비큐 이용을 함께 고려하는 분께 적합합니다. 정확한 위치는 지도에서 확인하실 수 있으며, 차량 이동 동선은 방문 전 미리 확인해 주세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "헤이리마을과 가까운가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "베조아니펜션은 헤이리마을 근처에 있어 여행 전후로 하루 묵기 좋은 위치입니다. 파주 프로방스, 탄현면 일대 여행 동선에도 가깝습니다. 이동 시간은 교통 상황에 따라 달라질 수 있으므로 지도 링크에서 직접 확인해 주세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "바비큐 이용이 가능한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "가족 또는 단체 단위로 바비큐를 즐기며 머무실 수 있습니다. 바비큐 이용 조건은 날짜, 인원, 객실 상황에 따라 달라질 수 있습니다. 이용 예정일과 인원을 알려주시면 가능 여부를 먼저 확인해 드립니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "단체 숙박이 가능한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "가족 모임, 지인 모임, 소규모 단체 숙박이 가능한 펜션입니다. 인원과 날짜에 따라 객실 구성과 이용 조건이 달라질 수 있습니다. 단체 이용은 예약 전 전화로 먼저 문의해 주시면 일정에 맞게 안내드립니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "면회·외박 일정으로 파주에 머물 가족 숙소를 찾고 있는데, 이용하기 좋은가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "베조아니펜션은 파주 탄현면에 위치해 있어, 면회나 외박 일정으로 파주에 머무는 가족이 위치와 객실 가능 여부를 함께 확인해 보실 수 있는 펜션입니다. 정확한 이동 시간은 일정과 교통 상황에 따라 달라질 수 있어 단정해 안내드리기 어렵습니다. 일정이 정해졌다면 객실 가능 여부와 인원을 먼저 확인해 주시면 안내해 드립니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "가족 단위로 묵기 편한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아이와 부모가 함께 편하게 쉬고 식사하기 좋은 정겨운 펜션입니다. 객실과 바비큐 이용 조건은 일정에 따라 달라질 수 있습니다. 주차 가능 여부와 입실 시간은 예약 전 함께 확인해 보시는 것을 권장합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "주차가 가능한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "펜션 내 주차 공간을 이용하실 수 있습니다. 단체 이용으로 차량이 여러 대인 경우 사전 안내가 필요할 수 있습니다. 방문 차량 수가 많으시다면 예약 시 함께 알려주세요."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "예약은 어디서 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "예약은 NOL·네이버예약 등 제휴 플랫폼 또는 전화로 진행하실 수 있습니다. 플랫폼별로 표시되는 객실과 조건이 다를 수 있습니다. 단체·바비큐·외박 일정은 전화 문의가 더 빠르고 정확합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "전화 문의가 필요한 경우는 언제인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "단체 이용, 바비큐 조건, 면회·외박 일정 가족 숙박, 다인원 가족 숙박은 전화 문의를 권장합니다. 예약 플랫폼에서 확인하기 어려운 조건을 함께 정리해 드립니다. 연락처는 페이지 상단·하단에 안내된 번호를 이용해 주세요."
+      }
+    }
+  ]
+}
+</script>
+
+
+<!-- ============================================================
+  Scripts — Hero stagger + reveal + image scale-in
+  ============================================================ -->
+<script>
+  (function () {
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Hero stagger 시작
+    requestAnimationFrame(function () {
+      document.body.classList.add('is-loaded');
+    });
+
+    if (!('IntersectionObserver' in window) || reduced) {
+      document.querySelectorAll('.reveal, .img-scale').forEach(function (el) {
+        el.classList.add('is-in');
+      });
+      return;
+    }
+
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-in');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -6% 0px' });
+
+    document.querySelectorAll('.reveal, .img-scale').forEach(function (el) {
+      io.observe(el);
+    });
+  })();
+</script>
+
+</body>
+</html>
